@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  padding: 0;
+  padding: 20px;
   position: relative;
   color: var(--color-text, black);
 }
@@ -65,6 +65,18 @@ img {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  width: 260px;
+  height: 44px;
+  background-image: url(../img/covid-shield-logo.svg);
+  background-repeat: no-repeat;
 }
 
 .lead {
