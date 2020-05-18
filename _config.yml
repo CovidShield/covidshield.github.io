@@ -1,0 +1,4 @@
+lsi: false
+safe: true
+incremental: false
+include: [".well-known"]
