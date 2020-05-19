@@ -192,10 +192,10 @@ li {
   top: 70px;
   z-index: 1;
   width: 100%;
-  height: 90px;
+  height: 140px;
   right: -2px;
   transition: all 350ms ease-out;
-  transition-delay: 300ms;
+  transition-delay: 750ms;
   opacity: 0;
   transform: translateY(100%);
 }
