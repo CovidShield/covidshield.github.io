@@ -87,6 +87,7 @@ img {
 
 li {
   font-size: 20px;
+  margin: var(--spacing) 0;
 }
 
 .lead {
