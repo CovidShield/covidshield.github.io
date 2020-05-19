@@ -151,7 +151,7 @@ li {
 }
 
 .unstyled-list li {
-  margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing);
 }
 
 .section-icon {
@@ -195,8 +195,4 @@ li {
 .notification--visible {
   transform: translateY(0);
   opacity: 1;
-}
-
-.link-list li {
-  margin-bottom: 10px;
 }
