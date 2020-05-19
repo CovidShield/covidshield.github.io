@@ -17,9 +17,18 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="COVID Shield – an exposure notification app" />
-    <meta name="twitter:description" content="Combined with the Apple & Google Exposure Notification API, this is the most privacy-preserving course of action to help Canadians get safely back to work." />
-    <meta name="twitter:image" content="https://covidshield.app/img/twitter-card.png" />
+    <meta
+      name="twitter:title"
+      content="COVID Shield – an exposure notification app"
+    />
+    <meta
+      name="twitter:description"
+      content="Combined with the Apple & Google Exposure Notification API, this is the most privacy-preserving course of action to help Canadians get safely back to work."
+    />
+    <meta
+      name="twitter:image"
+      content="https://covidshield.app/img/twitter-card.png"
+    />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -27,60 +36,284 @@
   <body>
     <main>
       <section>
-        <h1 class="logo">COVID Shield</h1>
-        <p>
-          Combined with the <a href="https://www.apple.com/covid19/contacttracing">Apple & Google Exposure Notification API</a>, this is the most privacy-preserving course
-          of action to help Canadians get safely back to work.
-        </p>
-        <div class="button-group">
-          <a class="button" href="https://github.com/CovidShield"
-            >Source code on GitHub</a
-          >
-        </div>
-      </section>
-      <img
-        src="img/screens.jpg"
-        alt="Three iOS devices showing the default screen, an exposure notification, and the detail screen in COVID Shield mobile app"
-        class="image"
-      />
-      <section>
-        <div>
+        <h1>
           <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
+            class="logo"
+            width="60"
+            height="60"
+            viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
+              d="M10 1L2 3V9C2 15 10 19 10 19C10 19 18 15 18 9V3L10 1Z"
+              fill="#15A3A6"
+            />
+            <path
               fill-rule="evenodd"
               clip-rule="evenodd"
-              d="M20.5733 3.27401C20.3843 3.25811 20.1931 3.25 20 3.25H7C3.27208 3.25 0.25 6.27208 0.25 10V23C0.25 26.7279 3.27208 29.75 7 29.75H20C23.7279 29.75 26.75 26.7279 26.75 23V10C26.75 9.80689 26.7419 9.61569 26.726 9.42669C28.496 8.73605 29.75 7.01447 29.75 5C29.75 2.37665 27.6234 0.25 25 0.25C22.9855 0.25 21.264 1.50402 20.5733 3.27401ZM21.75 5C21.75 3.20507 23.2051 1.75 25 1.75C26.7949 1.75 28.25 3.20507 28.25 5C28.25 6.79493 26.7949 8.25 25 8.25C23.2051 8.25 21.75 6.79493 21.75 5ZM20.2562 4.75614C20.2521 4.83691 20.25 4.91821 20.25 5C20.25 7.62335 22.3766 9.75 25 9.75C25.0818 9.75 25.1631 9.74793 25.2439 9.74385C25.2479 9.82872 25.25 9.91412 25.25 10V23C25.25 25.8995 22.8995 28.25 20 28.25H7C4.10051 28.25 1.75 25.8995 1.75 23V10C1.75 7.10051 4.10051 4.75 7 4.75H20C20.0859 4.75 20.1713 4.75206 20.2562 4.75614Z"
-              fill="black"
+              d="M7 9C7 7.34315 8.34315 6 10 6C11.0923 6 12.0482 6.58374 12.5729 7.45628L14.2881 6.42713C13.4137 4.97291 11.8205 4 10 4C7.23858 4 5 6.23858 5 9C5 11.7614 7.23858 14 10 14C11.8205 14 13.4137 13.0271 14.2881 11.5729L12.5729 10.5437C12.0482 11.4163 11.0923 12 10 12C8.34315 12 7 10.6569 7 9Z"
+              fill="white"
             />
           </svg>
-          <h2>Notifications when they matter</h2>
+          COVID Shield
+        </h1>
+        <p class="lead">
+          COVID Shield is a free-to-use exposure notification solution built
+          with privacy as its top priority. It is built by a group of volunteers
+          in Canada in order to help people safely return to work.
+        </p>
+        <div class="button-group">
+          <a
+            class="button button--inverted"
+            href="https://github.com/CovidShield"
+            >View on GitHub</a
+          >
+          <a class="button" href="mailto:press@covidshield.app">Contact us</a>
+        </div>
+
+        <div class="demo">
+          <div class="notification"></div>
+        </div>
+
+        <p>
+          COVID Shield is a private, secure, and easy-to-use tool to help
+          governments in Canada and around the world launch their own exposure
+          notification systems. It is based on the exposure notification
+          technology provided by Apple & Google, the most privacy-preserving
+          approach currently available.
+        </p>
+        <p>
+          For exposure notification to be most effective, it is important that
+          governments launch applications that can work together. COVID Shield
+          is designed to be deployed federally, provincially, or territorially
+          by enabling the server and clients to talk to each other even if there
+          are multiple instances.
+        </p>
+
+        <h2 class="subheading">Related reading</h2>
+        <ul class="unstyled-list" role="list">
+          <li><a href="#">Why is Exposure Notification important?</a></li>
+          <li><a href="#">Why use Google & Apple’s technology?</a></li>
+        </ul>
+      </section>
+      <div class="callout">
+        <section>
+          <h2>
+            <svg
+              class="section-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 1L2 3.5V11C2 18.3333 12 23 12 23C12 23 22 18.3333 22 11V3.5L12 1Z"
+                stroke="#002D42"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            Privacy is our top priority
+          </h2>
           <p>
-            COVID Shield runs in the background and only notifies you
-            if you've possibly been exposed to someone who has tested positive for COVID-19.
+            <strong
+              >COVID Shield takes a privacy-first approach to exposure
+              notification</strong
+            >. The COVID Shield app, its backend server, and the web-based
+            results portal are all designed to preserve personal privacy while
+            safely reopening the economy.
+          </p>
+          <p>
+            <a
+              class="button button--inverted"
+              href="https://github.com/CovidShield/rationale/blob/master/privacy-policy.md"
+              >Read our privacy policy</a
+            >
+          </p>
+        </section>
+      </div>
+      <section>
+        <h2>
+          <svg
+            class="section-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0H24V24H0V0Z" fill="white" />
+            <circle cx="12" cy="18" r="1" fill="#002D42" />
+            <path
+              d="M9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9C15 9.69762 14.8832 10.2006 14.6822 10.5632C13.8789 12.0123 12 12.8431 12 14.5V15"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="12" cy="12" r="11" stroke="#002D42" stroke-width="2" />
+          </svg>
+          How it works
+        </h2>
+        <p>
+          COVID Shield is made up of three parts: a mobile app, a server, and a
+          web-based results portal.
+        </p>
+        <div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17 1H7C5.89543 1 5 1.98497 5 3.2V20.8C5 22.015 5.89543 23 7 23H17C18.1046 23 19 22.015 19 20.8V3.2C19 1.98497 18.1046 1 17 1Z"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 20H14"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <h3>Mobile app</h3>
+          <p>
+            Get notified if you have potentially been exposed to COVID-19. If
+            you test positive for COVID-19, you can choose to anonymously share
+            your data so others can be notified of possible exposure.
+          </p>
+          <p>
+            The mobile app collects and shares anonymized device identifiers
+            ("random IDs") using Bluetooth Low Energy (BLE). COVID Shield
+            periodically downloads codes from the server and checks to see if
+            any of them match codes the device has encountered. COVID Shield
+            runs in the background. If it detects that you have come in contact
+            with someone who has tested positive for COVID-19, COVID Shield will
+            send you a message.
           </p>
         </div>
         <div>
-          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 7C9.75 4.10051 12.1005 1.75 15 1.75C17.8995 1.75 20.25 4.10051 20.25 7V10.25H9.75V7ZM8.25 10.3089V7C8.25 3.27208 11.2721 0.25 15 0.25C18.7279 0.25 21.75 3.27208 21.75 7V10.3089C24.017 10.6685 25.75 12.6318 25.75 15V25C25.75 27.6234 23.6234 29.75 21 29.75H9C6.37665 29.75 4.25 27.6234 4.25 25V15C4.25 12.6318 5.98301 10.6685 8.25 10.3089ZM5.75 15C5.75 13.2051 7.20507 11.75 9 11.75H21C22.7949 11.75 24.25 13.2051 24.25 15V25C24.25 26.7949 22.7949 28.25 21 28.25H9C7.20507 28.25 5.75 26.7949 5.75 25V15Z" fill="black"/>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.8 14H3.2C1.98497 14 1 14.8954 1 16V20C1 21.1046 1.98497 22 3.2 22H20.8C22.015 22 23 21.1046 23 20V16C23 14.8954 22.015 14 20.8 14Z"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20.8 2H3.2C1.98497 2 1 2.89543 1 4V8C1 9.10457 1.98497 10 3.2 10H20.8C22.015 10 23 9.10457 23 8V4C23 2.89543 22.015 2 20.8 2Z"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="5" cy="18" r="1" fill="#002D42" />
+            <circle cx="5" cy="6" r="1" fill="#002D42" />
           </svg>
-
-          <h2>Privacy as a top priority</h2>
+          <h3>Server</h3>
           <p>
-            COVID Shield has been designed with user privacy as the top priority.
-            We must strike a balance between opening the economy and preserving
-            personal privacy, and COVID Shield takes a privacy-first approach.
-            The COVID Shield app, its backend server, and the portal are all
-            designed to make it as difficult as possible to personally identify
-            users or link them to their test results. To learn more about how
-            we’ve approached privacy, read <a href="https://github.com/CovidShield/rationale/blob/master/privacy-policy.md">our privacy policy</a>.
+            The backend server securely collects and stores diagnosis keys
+            uploaded from the mobile app after confirmation of a positive test
+            result. It also generates unique temporary codes which grant
+            permission for people with a positive COVID-19 test result to upload
+            their diagnosis keys. This server has been designed to work whether
+            it has been deployed federally, provincially, or territorially.
           </p>
         </div>
+        <div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.8 1H3.2C1.98497 1 1 1.89543 1 3V17C1 18.1046 1.98497 19 3.2 19H20.8C22.015 19 23 18.1046 23 17V3C23 1.89543 22.015 1 20.8 1Z"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 23H16"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12 19V23"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h3>Web portal</h3>
+          <p>
+            The web-based results portal provides unique numeric codes to be
+            given by health care professionals to patients with a confirmed
+            positive COVID-19 test result. This code gives the patient access to
+            upload their anonymized device identifiers (random IDs) via the app.
+            There is no association between these temporary codes and specific
+            COVID-19 tests or patients. The code is delivered over any
+            communications channel (such as the phone) so it cannot be traced to
+            any person or their test results. Use of the portal is optional, as
+            the backend API also generates temporary COVID Shield codes.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>
+          <svg
+            class="section-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 1L2 3.5V11C2 18.3333 12 23 12 23C12 23 22 18.3333 22 11V3.5L12 1Z"
+              stroke="#002D42"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          Who built COVID Shield?
+        </h2>
+        <p>
+          We are a group of Shopify volunteers who want to help to slow the
+          spread of COVID-19 by offering our skills and experience developing
+          scalable, easy to use applications. We are releasing COVID Shield free
+          of charge with a flexible open-source license for anyone to use or
+          learn from.
+        </p>
+        <p>
+          For questions, we can be reached at
+          <a href="mailto:press@covidshield.app">press@covidshield.app</a>
+        </p>
       </section>
     </main>
   </body>

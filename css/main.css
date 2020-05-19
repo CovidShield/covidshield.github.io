@@ -1,7 +1,8 @@
 :root {
   --color-primary: #0278a4;
-  --color-text: black;
-  --color-primary-text: white;
+  --color-text: #002d42;
+  --color-inverted: black;
+  --color-inverted-text: white;
   --spacing: 20px;
   --spacing-small: 8px;
   --spacing-large: 48px;
@@ -19,9 +20,9 @@ html {
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  padding: 20px;
+  padding: var(--spacing);
   position: relative;
-  color: var(--color-text, black);
+  color: var(--color-text);
 }
 
 main {
@@ -42,8 +43,12 @@ section > * + * {
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 48px;
+  line-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-inverted);
 }
 
 h2 {
@@ -53,11 +58,23 @@ h2 {
   line-height: 30px;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 p {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 img {
@@ -67,23 +84,24 @@ img {
   margin: 0 auto;
 }
 
-.logo {
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-
-  width: 260px;
-  height: 44px;
-  background-image: url(../img/covid-shield-logo.svg);
-  background-repeat: no-repeat;
-}
-
 .lead {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 33px;
+  text-align: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.subheading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .button {
@@ -93,19 +111,74 @@ img {
   border-radius: 3px;
   padding: var(--spacing-small) var(--spacing);
   text-decoration: none;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--color-inverted);
+  border: 1px solid var(--color-inverted);
 }
 
 .button--primary {
-  color: var(--color-primary-text);
+  color: var(--color-inverted-text);
   background-color: var(--color-primary);
+}
+
+.button--inverted {
+  color: var(--color-inverted-text);
+  background-color: var(--color-inverted);
 }
 
 .button-group {
   margin: var(--spacing-large) 0 var(--spacing);
+  display: flex;
+  justify-content: center;
 }
 
 .button-group > * + * {
   margin-left: var(--spacing);
+}
+
+.unstyled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-icon {
+  margin-left: calc(-2 * var(--spacing));
+  margin-right: calc(var(--spacing) / 2);
+  margin-bottom: -3px;
+}
+
+.callout {
+  background: #f6f9fc;
+  padding: 20px 0;
+  margin: var(--spacing) calc(-1 * var(--spacing));
+}
+
+.demo {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background: url(../img/device.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.notification {
+  background: url(../img/notification.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  transition: all 150ms ease-out;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.notification--visible {
+  transform: translateY(0);
+  opacity: 1;
 }
