@@ -43,12 +43,13 @@ section > * + * {
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 62px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-inverted);
+  white-space: nowrap;
 }
 
 h2 {
@@ -155,14 +156,19 @@ li {
 }
 
 .section-icon {
-  margin-left: calc(-2 * var(--spacing));
-  margin-right: calc(var(--spacing) / 2);
   margin-bottom: -3px;
+  margin-right: calc(var(--spacing) / 2);
+}
+
+@media all and (min-width: 700px) {
+  .section-icon {
+    margin-left: calc(-2 * var(--spacing));
+  }
 }
 
 .callout {
   background: #f6f9fc;
-  padding: 20px 0;
+  padding: 20px;
   margin: var(--spacing) calc(-1 * var(--spacing));
 }
 
