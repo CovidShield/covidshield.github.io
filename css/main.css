@@ -43,13 +43,20 @@ section > * + * {
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 62px;
+  font-size: 28px;
+  line-height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-inverted);
   white-space: nowrap;
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 40px;
+    line-height: 62px;
+  }
 }
 
 h2 {
@@ -93,13 +100,30 @@ li {
 .lead {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 28px;
   text-align: center;
 }
 
+@media all and (min-width: 700px) {
+  .lead {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
 .logo {
-  margin-right: 20px;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+@media all and (min-width: 700px) {
+  .logo {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+  }
 }
 
 .subheading {
@@ -144,6 +168,10 @@ li {
 
 .button-group > * + * {
   margin-left: var(--spacing);
+}
+
+.button-group > * {
+  margin-bottom: var(--spacing-small);
 }
 
 .unstyled-list {
