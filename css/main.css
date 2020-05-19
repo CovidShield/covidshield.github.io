@@ -84,6 +84,10 @@ img {
   margin: 0 auto;
 }
 
+li {
+  font-size: 20px;
+}
+
 .lead {
   font-style: normal;
   font-weight: normal;
@@ -181,4 +185,8 @@ img {
 .notification--visible {
   transform: translateY(0);
   opacity: 1;
+}
+
+.link-list li {
+  margin-bottom: 10px;
 }
