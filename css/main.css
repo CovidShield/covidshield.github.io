@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   padding: var(--spacing);
   position: relative;
   color: var(--color-text);
