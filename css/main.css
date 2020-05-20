@@ -160,18 +160,17 @@ li {
 }
 
 .button-group {
-  margin: var(--spacing-large) 0 var(--spacing);
+  padding: var(--spacing-large) 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.button-group > * + * {
-  margin-left: var(--spacing);
+  margin-top: calc(-1 * var(--spacing));
+  margin-left: calc(-1 * var(--spacing));
 }
 
 .button-group > * {
-  margin-bottom: var(--spacing-small);
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
 }
 
 .unstyled-list {
