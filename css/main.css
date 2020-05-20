@@ -31,8 +31,13 @@ main {
   justify-content: center;
 }
 
-section {
+.width--600 {
   max-width: 600px;
+  margin: 0 auto var(--spacing);
+}
+
+.width--820 {
+  max-width: 820px;
   margin: 0 auto var(--spacing);
 }
 
@@ -105,7 +110,7 @@ li {
   text-align: center;
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 900px) {
   .lead {
     font-size: 24px;
     line-height: 33px;
@@ -118,7 +123,7 @@ li {
   width: 30px;
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 900px) {
   .logo {
     margin-right: 10px;
     height: 60px;
@@ -188,22 +193,35 @@ li {
   margin-right: calc(var(--spacing) / 2);
 }
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 900px) {
   .section-icon {
     margin-left: calc(-2 * var(--spacing));
   }
 }
 
-.callout-blue {
-  background: #ebf5ff;
-  padding: 20px;
-  margin: var(--spacing) calc(-1 * var(--spacing));
+.callout {
+  margin-top: calc(2 * var(--spacing));
+  margin-bottom: calc(2 * var(--spacing));
+  padding: 40px;
+  background: #f9fcff;
+  box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1),
+    0px 3px 6px rgba(0, 0, 7, 0.07);
+  border-radius: 10px;
+  border-left: 5px solid var(--color-primary);
 }
 
-.callout-green {
-  background: #e9ffec;
-  padding: 20px;
-  margin: var(--spacing) calc(-1 * var(--spacing));
+@media all and (min-width: 900px) {
+  .callout {
+    padding: 60px 110px 60px 105px;
+  }
+}
+
+.callout h2 {
+  margin-top: 0;
+}
+
+.callout p:last-of-type {
+  margin-bottom: 0;
 }
 
 .demo {
