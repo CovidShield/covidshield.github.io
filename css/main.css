@@ -1,7 +1,8 @@
 :root {
   --color-primary: #0278a4;
-  --color-text: black;
-  --color-primary-text: white;
+  --color-text: #002d42;
+  --color-inverted: black;
+  --color-inverted-text: white;
   --spacing: 20px;
   --spacing-small: 8px;
   --spacing-large: 48px;
@@ -18,10 +19,10 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  padding: 20px;
+  font-family: "Nunito", sans-serif;
+  padding: var(--spacing);
   position: relative;
-  color: var(--color-text, black);
+  color: var(--color-text);
 }
 
 main {
@@ -42,8 +43,20 @@ section > * + * {
 h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-inverted);
+  white-space: nowrap;
+}
+
+@media all and (min-width: 700px) {
+  h1 {
+    font-size: 40px;
+    line-height: 62px;
+  }
 }
 
 h2 {
@@ -53,11 +66,23 @@ h2 {
   line-height: 30px;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 p {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 img {
@@ -67,23 +92,46 @@ img {
   margin: 0 auto;
 }
 
-.logo {
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-
-  width: 260px;
-  height: 44px;
-  background-image: url(../img/covid-shield-logo.svg);
-  background-repeat: no-repeat;
+li {
+  font-size: 20px;
+  margin: var(--spacing) 0;
 }
 
 .lead {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+@media all and (min-width: 700px) {
+  .lead {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.logo {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+@media all and (min-width: 700px) {
+  .logo {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.subheading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .button {
@@ -93,19 +141,97 @@ img {
   border-radius: 3px;
   padding: var(--spacing-small) var(--spacing);
   text-decoration: none;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--color-inverted);
+  border: 1px solid var(--color-inverted);
 }
 
 .button--primary {
-  color: var(--color-primary-text);
+  color: var(--color-inverted-text);
   background-color: var(--color-primary);
 }
 
-.button-group {
-  margin: var(--spacing-large) 0 var(--spacing);
+.button--inverted {
+  color: var(--color-inverted-text);
+  background-color: var(--color-inverted);
 }
 
-.button-group > * + * {
+.button__icon {
+  margin-right: var(--spacing-small);
+}
+
+.button-group {
+  padding: var(--spacing-large) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(-1 * var(--spacing));
+  margin-left: calc(-1 * var(--spacing));
+}
+
+.button-group > * {
   margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.unstyled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unstyled-list li {
+  margin-bottom: var(--spacing);
+}
+
+.section-icon {
+  margin-bottom: -3px;
+  margin-right: calc(var(--spacing) / 2);
+}
+
+@media all and (min-width: 700px) {
+  .section-icon {
+    margin-left: calc(-2 * var(--spacing));
+  }
+}
+
+.callout {
+  background: #f6f9fc;
+  padding: 20px;
+  margin: var(--spacing) calc(-1 * var(--spacing));
+}
+
+.demo {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  background: url(../img/device.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.notification {
+  background: url(../img/notification.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+  width: 100%;
+  height: 140px;
+  right: -2px;
+  transition: all 350ms ease-out;
+  transition-delay: 750ms;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.notification--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.subdued {
+  font-size: 16px;
 }
