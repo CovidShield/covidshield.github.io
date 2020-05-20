@@ -179,6 +179,7 @@ li {
 
 .button__icon {
   margin-right: var(--spacing-small);
+  transform: translateY(0);
 }
 
 .button-group {
