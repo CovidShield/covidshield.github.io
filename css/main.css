@@ -212,7 +212,7 @@ li {
 }
 
 .notification {
-  background: url(../img/notification.svg);
+  background: url(../img/notification.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
