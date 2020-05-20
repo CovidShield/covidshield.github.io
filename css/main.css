@@ -228,7 +228,7 @@ li {
   height: 140px;
   right: -2px;
   transition: all 200ms ease-in-out;
-  transition-delay: 750ms;
+  transition-delay: 500ms;
   opacity: 0;
   transform: translateY(100%) scale(0.8);
 }
