@@ -194,8 +194,14 @@ li {
   }
 }
 
-.callout {
-  background: #f6f9fc;
+.callout-blue {
+  background: #ebf5ff;
+  padding: 20px;
+  margin: var(--spacing) calc(-1 * var(--spacing));
+}
+
+.callout-green {
+  background: #e9ffec;
   padding: 20px;
   margin: var(--spacing) calc(-1 * var(--spacing));
 }
@@ -221,10 +227,10 @@ li {
   width: 100%;
   height: 140px;
   right: -2px;
-  transition: all 350ms ease-out;
+  transition: all 200ms ease-in-out;
   transition-delay: 750ms;
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(100%) scale(0.8);
 }
 
 .notification--visible {
