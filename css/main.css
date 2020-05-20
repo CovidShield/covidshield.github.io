@@ -209,7 +209,7 @@ li {
 .callout {
   margin-top: calc(2 * var(--spacing));
   margin-bottom: calc(2 * var(--spacing));
-  padding: 40px;
+  padding: 20px;
   background: #f9fcff;
   box-shadow: 0px 7px 14px rgba(50, 50, 93, 0.1),
     0px 3px 6px rgba(0, 0, 7, 0.07);
