@@ -115,6 +115,7 @@ li {
   font-size: 16px;
   background-color: #ebf5ff;
   border-radius: 10px;
+  margin-top: 0;
 }
 
 @media all and (min-width: 900px) {
