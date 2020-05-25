@@ -6,7 +6,21 @@ This is the static site for COVID Shield.
 
 ### Prerequisites
 
-1. [hugo](https://gohugo.io/getting-started/installing/)
+Install [hugo](https://gohugo.io/)
+
+#### Homebrew (macOS and Linux)
+
+```bash
+brew install hugo
+```
+
+#### Chocolatey (Windows)
+
+```bash
+choco install hugo -confirm
+```
+
+For more information on how to install hugo see their [installation instructions](https://gohugo.io/getting-started/installing/).
 
 ### 1. Check out the repository
 
