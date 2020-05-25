@@ -25,7 +25,7 @@ For more information on how to install hugo see their [installation instructions
 ### 1. Check out the repository
 
 ```bash
-git clone git@github.com:CovidShield/portal.git
+git clone git@github.com:CovidShield/covidshield.github.io.git
 ```
 
 ### 2. Run the server
