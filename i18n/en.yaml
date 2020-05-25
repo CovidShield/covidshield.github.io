@@ -1,0 +1,77 @@
+twitter_title:
+  other: "COVID Shield – an exposure notification app"
+twitter_description:
+  other: "COVID Shield is a free exposure notification solution built with privacy as its top priority."
+title:
+  other: "COVID Shield"
+intro:
+  other: "COVID Shield is a free exposure notification solution built
+    with privacy as its top priority. It was built by a group of
+    volunteers in order to help Canadians and the rest of the world safely
+    return to work."
+disclaimer_title:
+  other: "How can I download and use COVID Shield?"
+disclaimer_message:
+  other: "COVID Shield is not currently available for download or use."
+disclaimer_content:
+  other: "COVID Shield is provided as a reference for your local public health authority to build their own app. If you are interested in using COVID Shield, please contact your local government representative and ask what they are doing about exposure notification for COVID-19."
+view_on_github:
+  other: "View on GitHub"
+contact_us:
+  other: "Contact us"
+paragraph_1:
+  other: 'COVID Shield is a private, secure, and easy-to-use tool to help
+    governments launch their own exposure notification systems. It is
+    based on the exposure notification technology <a
+    href="https://www.apple.com/covid19/contacttracing">provided by Apple
+    and Google</a>, the most privacy-preserving approach currently
+    available.'
+paragraph_2:
+  other: "For exposure notification to be most effective, it is important that
+    governments launch applications that can work together. COVID Shield
+    is flexible enough to be deployed at various levels of government by
+    enabling the server and mobile app to talk to each other even if there
+    are multiple instances."
+related_reading_title:
+  other: "Related reading"
+related_reading_1:
+  other: "How does Exposure Notification work?"
+related_reading_2:
+  other: "Why is Exposure Notification important?"
+related_reading_3:
+  other: "Why use Apple and Google’s technology?"
+privacy_title:
+  other: "Privacy is our top priority"
+privacy_content:
+  other: "<strong>COVID Shield takes a privacy-first approach to exposure notification.</strong> The COVID Shield app, its server, and the web-based results portal are all designed to preserve personal privacy while helping people safely return to work."
+privacy_action:
+  other: "Read our sample privacy policy"
+three_parts:
+  other: "COVID Shield is made up of three parts: a mobile app, a server, and a
+    web-based results portal."
+mobile_app_title:
+  other: "Mobile app (iOS and Android)"
+mobile_app_content:
+  other: "The mobile app runs in the background and requires no user interaction after onboarding. It uses Bluetooth to collect and share random IDs with nearby phones with COVID Shield installed. If a user tests positive for COVID-19, they can choose to anonymously share their data so others can be notified of possible exposure. Sharing of random IDs is voluntary and only possible with a positive test result confirmed by a health care professional. COVID Shield periodically downloads the shared random IDs from the server and compares them on each user’s device to determine if a possible exposure has occurred."
+server_title:
+  other: "Server"
+server_content:
+  other: "The server securely collects and stores random IDs uploaded from the mobile app after a confirmed positive test result. It also generates unique temporary codes which grant permission for people with a positive COVID-19 test result to upload their random IDs. The server is flexible enough to be deployed at various levels of government."
+web_portal_title:
+  other: "Web portal"
+web_portal_content_1:
+  other: "The web-based results portal provides health care professionals unique temporary codes which can be shared with users who have tested positive for COVID-19. This code gives a user access to upload their random IDs via the mobile app if they choose. No personal information is collected and there is no association between the codes and specific tests."
+web_portal_content_2:
+  other: "Use of the portal is optional, as the server can also be used to generate temporary COVID Shield codes."
+who_built_title:
+  other: "Who built COVID Shield?"
+who_built_content_1:
+  other: "We are a group of Shopify volunteers who want to help to slow the spread of COVID-19 by offering our skills and experience developing scalable, easy to use applications. We are releasing COVID Shield free of charge with a flexible open-source license."
+who_built_content_2:
+  other: 'For questions, we can be reached at <a href="mailto:press@covidshield.app">press@covidshield.app</a>'
+attribution:
+  other:
+    'Photo by <a href="https://burst.shopify.com/@alpenglowphoto?utm_campaign=photo_credit&amp;utm_content=Browse+Free+HD+Images+of+Line+Of+Frosty+Pines+Separates+Frozen+Lake+From+Mountains&amp;utm_medium=referral&amp;utm_source=credit">Shawna
+    and Damien Richard</a> from <a href="https://burst.shopify.com/lake?utm_campaign=photo_credit&amp;utm_content=Browse+Free+HD+Images+of+Line+Of+Frosty+Pines+Separates+Frozen+Lake+From+Mountains&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>'
+return_to_homepage:
+  other: "Return to homepage"

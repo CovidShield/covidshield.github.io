@@ -1,0 +1,13 @@
+baseURL: https://covidshield.app/
+languageCode: en
+title: COVID Shield
+publishDir: docs
+languages:
+  en:
+    title: COVID Shield
+    languageName: English
+    weight: 1
+  fr:
+    title: COVID Shield
+    languageName: Français
+    weight: 2
