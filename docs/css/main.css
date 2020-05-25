@@ -110,14 +110,6 @@ li {
   text-align: center;
 }
 
-.disclaimer {
-  padding: var(--spacing);
-  font-size: 16px;
-  background-color: #ebf5ff;
-  border-radius: 10px;
-  margin-top: 0;
-}
-
 @media all and (min-width: 900px) {
   .lead {
     font-size: 24px;
@@ -228,7 +220,7 @@ li {
   .section-icon {
     margin-left: calc(-2 * var(--spacing));
     margin-bottom: -3px;
-    display: inline;
+    display: inline-block;
   }
 }
 
@@ -291,4 +283,12 @@ li {
 
 .subdued {
   font-size: 16px;
+}
+
+.disclaimer {
+  padding: var(--spacing);
+  font-size: 16px;
+  background-color: #ebf5ff;
+  border-radius: 10px;
+  margin-top: 0;
 }
