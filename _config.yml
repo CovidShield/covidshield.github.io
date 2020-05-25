@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+lsi: false
+safe: true
+incremental: false
+include: [".well-known"]
