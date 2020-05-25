@@ -9,6 +9,12 @@ intro:
     with privacy as its top priority. It was built by a group of
     volunteers in order to help Canadians and the rest of the world safely
     return to work."
+disclaimer_title:
+  other: "How can I download and use COVID Shield?"
+disclaimer_message:
+  other: "COVID Shield is not currently available for download or use."
+disclaimer_content:
+  other: "COVID Shield is provided as a reference for your local public health authority to build their own app. If you are interested in using COVID Shield, please contact your local government representative and ask what they are doing about exposure notification for COVID-19."
 view_on_github:
   other: "View on GitHub"
 contact_us:
@@ -37,9 +43,9 @@ related_reading_3:
 privacy_title:
   other: "Privacy is our top priority"
 privacy_content:
-  other: "<strong>COVID Shield takes a privacy-first approach to exposure notification.</strong> The COVID Shield app, its backend server, and the web-based results portal are all designed to preserve personal privacy while helping people safely return to work."
+  other: "<strong>COVID Shield takes a privacy-first approach to exposure notification.</strong> The COVID Shield app, its server, and the web-based results portal are all designed to preserve personal privacy while helping people safely return to work."
 privacy_action:
-  other: "Read our privacy policy"
+  other: "Read our sample privacy policy"
 three_parts:
   other: "COVID Shield is made up of three parts: a mobile app, a server, and a
     web-based results portal."
@@ -67,3 +73,5 @@ attribution:
   other:
     'Photo by <a href="https://burst.shopify.com/@alpenglowphoto?utm_campaign=photo_credit&amp;utm_content=Browse+Free+HD+Images+of+Line+Of+Frosty+Pines+Separates+Frozen+Lake+From+Mountains&amp;utm_medium=referral&amp;utm_source=credit">Shawna
     and Damien Richard</a> from <a href="https://burst.shopify.com/lake?utm_campaign=photo_credit&amp;utm_content=Browse+Free+HD+Images+of+Line+Of+Frosty+Pines+Separates+Frozen+Lake+From+Mountains&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>'
+return_to_homepage:
+  other: "Return to homepage"

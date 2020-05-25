@@ -1,5 +1,5 @@
 ---
-title: "Privacy policy"
+title: "Politique de confidentialité"
 ---
 
 Last updated May 13, 2020
@@ -18,7 +18,8 @@ In keeping with Google and Apple’s [approach](https://www.apple.com/covid19/co
 - Temporary Exposure Keys (also known as Diagnosis Keys)
 
   - If you receive a positive test result, you will be given a Temporary Exposure Key for you to upload and share with all users of the app, only if you decide to do so. You completely control the decision whether to upload the Temporary Exposure Key or not.
-  - COVID Shield stores your Temporary Exposure Key for at most thirty days. \* Other users can then use COVID Shield to determine if any of the Random IDs their device has come into contact with are associated with a Temporary Exposure Key (and thus, whether they may have come into contact with an infected individual).
+  - COVID Shield stores your Temporary Exposure Key for at most thirty days.
+  - Other users can then use COVID Shield to determine if any of the Random IDs their device has come into contact with are associated with a Temporary Exposure Key (and thus, whether they may have come into contact with an infected individual).
 
 - App Usage Logs
 
