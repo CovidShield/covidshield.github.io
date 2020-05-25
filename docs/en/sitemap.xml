@@ -31,6 +31,20 @@
   </url>
   
   <url>
+    <loc>https://covidshield.app/privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://covidshield.app/fr/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://covidshield.app/privacy/"
+                />
+  </url>
+  
+  <url>
     <loc>https://covidshield.app/tags/</loc>
     <xhtml:link
                 rel="alternate"
