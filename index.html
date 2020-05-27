@@ -4,14 +4,13 @@
 	<meta name="generator" content="Hugo 0.71.0" />
   <meta charset="utf-8" />
   <title>COVID Shield</title>
-  <link rel="canonical" href="https://covidshield.app/" />
+  <link rel="canonical" href="https://www.covidshield.app/" />
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="manifest" href="/manifest.json" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <link rel="stylesheet" href="/css/normalize.css" />
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap"
@@ -31,7 +30,9 @@
 
   <body>
     <main>
-      <section class="width--600">
+      
+
+      <section class="section">
         <h1>
           <svg
             class="logo"
@@ -88,7 +89,23 @@
         </div>
 
         <div class="demo">
-          <div class="notification"></div>
+          <div class="notification" aria-hidden="true">
+            <div class="notification__backdrop">
+              <div class="notification__header">
+                <div class="notification__app">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="20" height="20" rx="5" fill="white"/>
+                    <path d="M9.99929 1.81819L2.72656 3.63637V9.09092C2.72656 14.5455 9.99929 18.1818 9.99929 18.1818C9.99929 18.1818 17.272 14.5455 17.272 9.09092V3.63637L9.99929 1.81819Z" fill="#15A3A6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.27326 9.09091C7.27326 7.58468 8.4943 6.36364 10.0005 6.36364C10.9935 6.36364 11.8626 6.89432 12.3395 7.68755L13.8988 6.75196C13.1039 5.42992 11.6555 4.54546 10.0005 4.54546C7.49015 4.54546 5.45508 6.58053 5.45508 9.09091C5.45508 11.6013 7.49015 13.6364 10.0005 13.6364C11.6555 13.6364 13.1039 12.7519 13.8988 11.4299L12.3395 10.4943C11.8625 11.2875 10.9935 11.8182 10.0005 11.8182C8.4943 11.8182 7.27326 10.5971 7.27326 9.09091Z" fill="white"/>
+                  </svg>
+                  <span class="notification__app-name">COVID Shield</span>
+                </div>
+                <span class="notification__time">now</span>
+              </div>
+              <p class="notification__title">You have possibly been exposed to COVID-19</p>
+              <p class="notification__content">Based on your random IDs, you have been near someone in the past 14 days who tested positive for COVID-19.</p>
+            </div>
+          </div>
         </div>
 
         <p>
@@ -118,7 +135,7 @@
           </li>
         </ul>
       </section>
-      <section class="width--820">
+      <section class="section section--wide">
         <div class="callout">
           <h2>
             <svg
@@ -145,13 +162,13 @@
             <strong>COVID Shield takes a privacy-first approach to exposure notification.</strong> The COVID Shield app, its server, and the web-based results portal are all designed to preserve personal privacy while helping people safely return to work.
           </p>
           <p>
-            <a class="button button--inverted" href="https://covidshield.app/privacy/"
+            <a class="button button--inverted" href="https://www.covidshield.app/privacy/"
               >Read our sample privacy policy</a
             >
           </p>
         </div>
       </section>
-      <section class="width--600">
+      <section class="section">
         <p class="lead align-left">
           COVID Shield is made up of three parts: a mobile app, a server, and a web-based results portal.
         </p>
@@ -255,7 +272,7 @@
           <p>Use of the portal is optional, as the server can also be used to generate temporary COVID Shield codes.</p>
         </div>
       </section>
-      <section class="width--820">
+      <section class="section section--wide">
         <div class="callout">
           <h2>
             <svg
@@ -286,7 +303,7 @@
           </p>
         </div>
       </section>
-      <section class="width--600">
+      <section class="section">
         <div class="button-group">
           <a
             class="button button--inverted"

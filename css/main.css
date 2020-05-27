@@ -31,20 +31,6 @@ main {
   justify-content: center;
 }
 
-.width--600 {
-  max-width: 600px;
-  margin: 0 auto var(--spacing);
-}
-
-.width--820 {
-  max-width: 820px;
-  margin: 0 auto var(--spacing);
-}
-
-section > * + * {
-  margin-top: var(--spacing-large);
-}
-
 h1 {
   font-style: normal;
   font-weight: bold;
@@ -100,6 +86,24 @@ img {
 li {
   font-size: 20px;
   margin: var(--spacing) 0;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+.section {
+  max-width: 600px;
+  margin: 0 auto var(--spacing);
+}
+
+.section--wide {
+  max-width: 820px;
+  margin: 0 auto var(--spacing);
+}
+
+.section > * + * {
+  margin-top: var(--spacing-large);
 }
 
 .lead {
@@ -260,16 +264,12 @@ li {
 }
 
 .notification {
-  background: url(../img/notification.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+  display: flex;
+  justify-content: center;
   position: absolute;
+  width: 100%;
   top: 70px;
   z-index: 1;
-  width: 100%;
-  height: 140px;
-  right: -2px;
   transition: all 200ms ease-in-out;
   transition-delay: 500ms;
   opacity: 0;
@@ -279,6 +279,62 @@ li {
 .notification--visible {
   transform: translateY(0);
   opacity: 1;
+}
+
+.notification__backdrop {
+  max-width: 380px;
+  background-color: rgba(230, 230, 230, 0.9);
+  border-radius: 10px;
+  padding: 12px;
+  font-family: sans-serif;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.notification__app {
+  display: flex;
+  align-items: center;
+}
+
+.notification__app-name {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 4px;
+  text-transform: uppercase;
+}
+
+.notification__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification__time {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.notification__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  margin: 4px 0;
+}
+
+.notification__content {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+  margin: 0;
+}
+
+@media all and (min-width: 900px) {
+  .callout {
+    padding: 60px 110px 60px 105px;
+  }
 }
 
 .subdued {
@@ -291,4 +347,31 @@ li {
   background-color: #ebf5ff;
   border-radius: 10px;
   margin-top: 0;
+}
+
+.language-heading {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.language-list {
+  max-width: 820px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.language-list__item {
+  margin: 0 var(--spacing-small) 0 0;
+}
+
+.language-list__language {
+  font-size: 14px;
 }

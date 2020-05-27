@@ -1,0 +1,4 @@
+# Our security address
+Contact: mailto:security@covidshield.app
+# Our security policy
+Security policy: https://github.com/CovidShield/backend/blob/master/SECURITY.md
