@@ -1,24 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>COVID Shield</title>
-    <link>https://www.covidshield.app/</link>
-    <description>Recent content on COVID Shield</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://www.covidshield.app/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Privacy policy</title>
-      <link>https://www.covidshield.app/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.covidshield.app/privacy/</guid>
-      <description>Last updated May 13, 2020
-COVID Shield has been designed with user privacy as the top priority. We must strike a balance between protecting public health and preserving personal privacy, and COVID Shield takes a privacy-first approach. The COVID Shield app is designed to make it as difficult as possible for COVID Shield or others to link the information you choose to provide to you or your device, and to use this information only to enable exposure notification in the midst of this unprecedented pandemic.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>COVID Shield</title><link>https://www.covidshield.app/</link><description>Recent content on COVID Shield</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://www.covidshield.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Politique de confidentialité</title><link>https://www.covidshield.app/privacy.fr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.covidshield.app/privacy.fr/</guid><description>Dernière mise à jour : 13 mai 2020
+COVID Shield a été conçue avec comme priorité absolue la protection de la vie privée des utilisateurs. Nous devons trouver un équilibre entre la protection de la santé publique et la protection de la vie privée, et COVID Shield adopte une approche qui privilégie cette dernière. L’application COVID Shield est conçue pour qu’il soit le plus difficile possible pour COVID Shield ou d’autres entités d’associer les informations que vous choisissez de fournir à vous ou à votre appareil : elle utilise ces renseignements uniquement pour permettre la notification d’exposition au virus dans le cadre de cette pandémie sans précédent.</description></item><item><title>Privacy policy</title><link>https://www.covidshield.app/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.covidshield.app/privacy/</guid><description>Last updated May 13, 2020
+COVID Shield has been designed with user privacy as the top priority. We must strike a balance between protecting public health and preserving personal privacy, and COVID Shield takes a privacy-first approach. The COVID Shield app is designed to make it as difficult as possible for COVID Shield or others to link the information you choose to provide to you or your device, and to use this information only to enable exposure notification in the midst of this unprecedented pandemic.</description></item></channel></rss>
